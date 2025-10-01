@@ -1,55 +1,49 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import peopleUnity from "@/assets/people-unity.jpg";
 
 const CARD_IMAGES = {
-  "1": "https://a.tcnn.vn//Upload/Images/Normal/2025/8/ba03fea5c8550945b3040a42c8910eee-20250819_1103_Nen-tang-Nganh-Noi-vu_simple_compose_01k307t5x1ecjrgsfvq0wwnkry-01.jpg",
-  "2": "https://tuyenquang.dcs.vn/Image/Large/2023710102723_144605.jpg",
+  "1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbF20TfZC8LKt72nW904OM4cdxmTHIjp-YQw&s",
+  "2": "https://imgcdn.tapchicongthuong.vn/tcct-media/23/5/16/xay-dung-nha-nuoc-phap-quyen.jpg",
 };
 
-const ContemporaryValueSection = () => {
+const Executive = () => {
   const navigate = useNavigate();
 
   const navigateToDetail = (section: string) => {
-    navigate(`/contemporary-value-detail/${section}`);
+    navigate(`/executive-detail/${section}`);
   };
 
   const sections = [
     {
       id: "1",
-      title: "Nhà nước dân chủ",
+      title: "Xây dựng Đảng thật sự trong sạch, vững mạnh",
       description:
-        "Nhà nước của nhân dân, do nhân dân, vì nhân dân với bản chất giai cấp công nhân và định hướng xã hội chủ nghĩa.",
+        "Đường lối đúng đắn, chỉnh đốn thường xuyên, đảng viên gương mẫu làm đầy tớ nhân dân.",
       image: CARD_IMAGES["1"],
     },
     {
       id: "2",
-      title: "Nhà nước pháp quyền",
+      title: "Xây dựng Nhà nước",
       description:
-        "Thượng tôn pháp luật, hợp hiến, hợp pháp, thành lập từ Quốc hội do nhân dân bầu ra.",
+        "Hoàn thiện pháp luật, kiểm soát quyền lực, xây dựng đội ngũ cán bộ có đạo đức và năng lực.",
       image: CARD_IMAGES["2"],
     },
   ];
 
   return (
     <section
-      id="contemporary-value"
+      id="executive"
       className="py-20 bg-gradient-to-br from-background to-accent/20"
     >
       <div className="container mx-auto px-4">
-        <div className=" text-center mb-16 relative overflow-hidden">
-          <img
-            src={peopleUnity}
-            alt="Đoàn kết nhân dân"
-            className="rounded-full mx-auto w-24 h-24 md:w-32 md:h-32 shadow-lg mb-6 border-2 border-vietnam-red/20"
-          />
-          <h2 className="font-inter text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-tight">
-            Tư tưởng Hồ Chí Minh về Nhà nước của dân, do dân, vì dân
+        <div className="text-center mb-16 relative overflow-hidden">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-tight">
+            Vận dụng tư tưởng Hồ Chí Minh vào xây dựng Đảng và Nhà nước
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-            Tư tưởng Hồ Chí Minh về Nhà nước nhấn mạnh bản chất dân chủ, pháp
-            quyền và lấy dân làm gốc.
+            Xây dựng Đảng và Nhà nước trong sạch, vững mạnh, lấy dân làm gốc,
+            thực hiện lời dạy của Bác Hồ.
           </p>
         </div>
 
@@ -60,6 +54,7 @@ const ContemporaryValueSection = () => {
               className="rounded-none cursor-pointer hover:shadow-xl transition-all duration-300 border-0 group overflow-hidden"
               onClick={() => navigateToDetail(section.id)}
             >
+              {/* Image Thumbnail */}
               <div className="relative overflow-hidden h-48 md:h-56 bg-muted">
                 <img
                   src={section.image}
@@ -97,4 +92,4 @@ const ContemporaryValueSection = () => {
   );
 };
 
-export default ContemporaryValueSection;
+export default Executive;

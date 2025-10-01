@@ -1,55 +1,51 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import peopleUnity from "@/assets/people-unity.jpg";
 
 const CARD_IMAGES = {
-  "1": "https://a.tcnn.vn//Upload/Images/Normal/2025/8/ba03fea5c8550945b3040a42c8910eee-20250819_1103_Nen-tang-Nganh-Noi-vu_simple_compose_01k307t5x1ecjrgsfvq0wwnkry-01.jpg",
-  "2": "https://tuyenquang.dcs.vn/Image/Large/2023710102723_144605.jpg",
+  "1": "https://lyluanchinhtri-statics.melisoft.vn/2024/01/18/1.dd__pl_1705552797697.jpg",
+  "2": "https://a.tcnn.vn/uploads/resources/hoainga/images/hchiminh.jpg",
 };
 
-const ContemporaryValueSection = () => {
+const IntegritySection = () => {
   const navigate = useNavigate();
 
   const navigateToDetail = (section: string) => {
-    navigate(`/contemporary-value-detail/${section}`);
+    navigate(`/integrity-detail/${section}`);
   };
 
   const sections = [
     {
       id: "1",
-      title: "Nhà nước dân chủ",
+      title: "Nhà nước trong sạch, vững mạnh",
       description:
-        "Nhà nước của nhân dân, do nhân dân, vì nhân dân với bản chất giai cấp công nhân và định hướng xã hội chủ nghĩa.",
+        "Kiểm soát quyền lực, phòng chống tiêu cực, tham nhũng, quan liêu và đặc quyền đặc lợi.",
       image: CARD_IMAGES["1"],
     },
     {
       id: "2",
-      title: "Nhà nước pháp quyền",
+      title: "Vận dụng tư tưởng Hồ Chí Minh",
       description:
-        "Thượng tôn pháp luật, hợp hiến, hợp pháp, thành lập từ Quốc hội do nhân dân bầu ra.",
+        "Xây dựng Đảng và Nhà nước trong sạch, vững mạnh, gắn bó với nhân dân, đảm bảo định hướng xã hội chủ nghĩa.",
       image: CARD_IMAGES["2"],
     },
   ];
 
   return (
     <section
-      id="contemporary-value"
+      id="integrity"
       className="py-20 bg-gradient-to-br from-background to-accent/20"
     >
       <div className="container mx-auto px-4">
-        <div className=" text-center mb-16 relative overflow-hidden">
-          <img
-            src={peopleUnity}
-            alt="Đoàn kết nhân dân"
-            className="rounded-full mx-auto w-24 h-24 md:w-32 md:h-32 shadow-lg mb-6 border-2 border-vietnam-red/20"
-          />
+        <div className="text-center mb-16 relative overflow-hidden">
           <h2 className="font-inter text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-tight">
-            Tư tưởng Hồ Chí Minh về Nhà nước của dân, do dân, vì dân
+            Tư tưởng Hồ Chí Minh về Nhà nước và vận dụng
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-            Tư tưởng Hồ Chí Minh về Nhà nước nhấn mạnh bản chất dân chủ, pháp
-            quyền và lấy dân làm gốc.
+            Tư tưởng Hồ Chí Minh nhấn mạnh Nhà nước trong sạch, vững mạnh và sự
+            vận dụng để xây dựng Đảng, Nhà nước pháp quyền xã hội chủ nghĩa.
           </p>
         </div>
 
@@ -60,6 +56,7 @@ const ContemporaryValueSection = () => {
               className="rounded-none cursor-pointer hover:shadow-xl transition-all duration-300 border-0 group overflow-hidden"
               onClick={() => navigateToDetail(section.id)}
             >
+              {/* Image Thumbnail */}
               <div className="relative overflow-hidden h-48 md:h-56 bg-muted">
                 <img
                   src={section.image}
@@ -97,4 +94,4 @@ const ContemporaryValueSection = () => {
   );
 };
 
-export default ContemporaryValueSection;
+export default IntegritySection;
