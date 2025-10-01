@@ -46,7 +46,7 @@ const Navigation = () => {
 
   const handleNavigation = (itemId) => {
     if (itemId === "review") {
-      navigate("/quiz");
+      navigate("quiz");
     } else {
       const element = document.getElementById(itemId);
       if (element) {

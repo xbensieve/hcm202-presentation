@@ -46,7 +46,7 @@ const App = () => (
             path="executive-detail/:section"
             element={<ExecutiveDetail />}
           />
-          <Route path="/quiz" element={<QuizPage />} />
+          <Route path="quiz" element={<QuizPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <ScrollToTop />
