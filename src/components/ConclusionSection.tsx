@@ -115,7 +115,6 @@ const ConclusionSection = () => {
             </CardContent>
           </Card>
         </div>
-
         {/* Final Message */}
         <div className="text-center">
           <div className="max-w-2xl mx-auto p-6 md:p-8 mb-8">
@@ -162,23 +161,13 @@ const ConclusionSection = () => {
               <div className="text-center">
                 © 2025 - Để học tập và nghiên cứu
                 <br />
-                Nhóm 2: {groupMembers.join(", ")}
+                Nhóm 2:
+                <br />
+                Nguyễn Hữu Nhật Triều (Nội dung), Nguyễn Sỹ Ben (Developer), Đào
+                Đặng Hoàng Kim (Nội dung), Nguyễn Tuấn Anh (Nội dung)
               </div>
-              <div className="flex items-center gap-4">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="text-muted-foreground hover:text-vietnam-red"
-                >
-                  Chia sẻ
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="text-muted-foreground hover:text-vietnam-red"
-                >
-                  Phản hồi
-                </Button>
+              <div className="text-center">
+                AI Tools hỗ trợ: Lovable.dev, ChatGPT 5, Gemini 2.0, Copilot
               </div>
             </div>
           </div>
