@@ -29,7 +29,7 @@ const ContemporaryValueDetail = () => {
     "1": {
       title: "Nhà nước dân chủ",
       image: HERO_IMAGES["1"],
-      videoUrl: "https://www.youtube.com/embed/JpWmCLk-LFE",
+      videoUrl: "https://www.youtube.com/embed/Tduv552AWLE",
       content: (
         <>
           <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -73,7 +73,7 @@ const ContemporaryValueDetail = () => {
     "2": {
       title: "Nhà nước pháp quyền",
       image: HERO_IMAGES["2"],
-      videoUrl: "https://www.youtube.com/embed/968FdvsIh6k",
+      videoUrl: "https://www.youtube.com/embed/dnMCD3MGGFo",
       content: (
         <>
           <p className="text-muted-foreground mb-6 leading-relaxed">

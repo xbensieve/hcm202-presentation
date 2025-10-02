@@ -29,7 +29,7 @@ const ExecutiveDetail = () => {
     "1": {
       title: "Xây dựng Đảng thật sự trong sạch, vững mạnh",
       image: HERO_IMAGES["1"],
-      videoUrl: "https://www.youtube.com/embed/968FdvsIh6k",
+      videoUrl: "https://www.youtube.com/embed/TdLPMVLEsUY",
       content: (
         <>
           <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -75,7 +75,7 @@ const ExecutiveDetail = () => {
     "2": {
       title: "Xây dựng Nhà nước",
       image: HERO_IMAGES["2"],
-      videoUrl: "https://www.youtube.com/embed/JpWmCLk-LFE",
+      videoUrl: "https://www.youtube.com/embed/RR-ZivsVTsg",
       content: (
         <>
           <p className="text-muted-foreground mb-6 leading-relaxed">

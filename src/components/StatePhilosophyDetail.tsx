@@ -30,12 +30,12 @@ const StatePhilosophyDetail = () => {
     "1": {
       title: "Đảng là đạo đức, là văn minh",
       image: HERO_IMAGES["1"],
-      videoUrl: "https://www.youtube.com/embed/K1QOWIO9P8k",
+      videoUrl: "https://www.youtube.com/embed/E4rE166KkRQ",
       content: (
         <ol className="space-y-6 list-decimal pl-6">
-          <li className="text-lg font-semibold text-vietnam-red">
+          <h1 className="text-lg font-semibold text-vietnam-red">
             Đảng là đạo đức, là văn minh
-          </li>
+          </h1>
           <p className="text-muted-foreground ml-6 leading-relaxed">
             Hồ Chí Minh khẳng định: “Đảng ta là đạo đức, là văn minh.”
             <br />
@@ -64,7 +64,7 @@ const StatePhilosophyDetail = () => {
     "2": {
       title: "Đảng cách mạng chân chính",
       image: HERO_IMAGES["2"],
-      videoUrl: "https://www.youtube.com/embed/JpWmCLk-LFE",
+      videoUrl: "https://www.youtube.com/embed/QsGS2MUG95Q",
       content: (
         <>
           <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -106,7 +106,7 @@ const StatePhilosophyDetail = () => {
     "3": {
       title: "Xây dựng đội ngũ cán bộ, đảng viên",
       image: HERO_IMAGES["3"],
-      videoUrl: "https://www.youtube.com/embed/968FdvsIh6k",
+      videoUrl: "https://www.youtube.com/embed/bcy9fxD43fI",
       content: (
         <ul className="space-y-6 list-disc pl-6">
           <li className="text-lg font-semibold text-vietnam-red">

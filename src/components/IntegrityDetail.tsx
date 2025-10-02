@@ -31,7 +31,7 @@ const IntegrityDetail = () => {
     "1": {
       title: "Nhà nước trong sạch, vững mạnh",
       image: HERO_IMAGES["1"],
-      videoUrl: "https://www.youtube.com/embed/JpWmCLk-LFE",
+      videoUrl: "https://www.youtube.com/embed/1QdbAYyS0QQ",
       content: (
         <>
           <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -71,7 +71,7 @@ const IntegrityDetail = () => {
     "2": {
       title: "Vận dụng tư tưởng Hồ Chí Minh",
       image: HERO_IMAGES["2"],
-      videoUrl: "https://www.youtube.com/embed/968FdvsIh6k",
+      videoUrl: "https://www.youtube.com/embed/Yp5Wc4JwlXs",
       content: (
         <>
           <p className="text-muted-foreground mb-6 leading-relaxed">

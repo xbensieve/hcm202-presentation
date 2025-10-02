@@ -33,7 +33,7 @@ const PartyThoughtDetail = () => {
     "4-1": {
       title: "Tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam",
       image: HCM_IMAGE,
-      videoUrl: "https://www.youtube.com/embed/K1QOWIO9P8k",
+      videoUrl: "https://www.youtube.com/embed/ZooHPAmu99k",
       content: (
         <ol className="space-y-6 list-decimal pl-6">
           <li className="text-lg font-semibold text-vietnam-red">

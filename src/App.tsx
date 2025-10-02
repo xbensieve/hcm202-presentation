@@ -15,6 +15,7 @@ import IntegrityDetail from "./components/IntegrityDetail";
 import ChatBox from "./components/ChatBox";
 import ExecutiveDetail from "./components/ExecutiveDetail";
 import QuizPage from "./components/QuizPage";
+import AIUsage from "./components/AIUsage";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
             element={<ExecutiveDetail />}
           />
           <Route path="quiz" element={<QuizPage />} />
+          <Route path="ai-usage" element={<AIUsage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <ScrollToTop />
